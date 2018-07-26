@@ -6,7 +6,7 @@
 and grumbling about this project. I have no idea what to do to correct my
 problems, and I don't even know what questions to ask on Slack. I know that
 this submission is both incorrect and incomplete, but I've hot a mental wall
-and need more personalized help.*/
+and need more personalized help... apologies in advance.*/
 
 
 body {
@@ -77,4 +77,21 @@ img {
 h1 {
   font-size: 2.5em;
   margin: 0;
+}
+
+/* code added to create two-column design on tablet devices*/
+@media screen and (min-width: 575px) {
+  h1 {
+    font-size: 3.0em;
+    margin: 1%;
+    width: 48%;
+  }
+}
+
+/* code added to create four-column design on laptop and larger devices*/
+@media screen and (min-width: 991px){
+   h1 {
+    margin: 1%;
+    width: 23%;
+  }
 }
