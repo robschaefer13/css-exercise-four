@@ -2,53 +2,79 @@
   box-sizing: border-box;
 }
 
+/* NOTE TO GRADING TEAM: I've already spent over 20 hours stumbling, fumbling,
+and grumbling about this project. I have no idea what to do to correct my
+problems, and I don't even know what questions to ask on Slack. I know that
+this submission is both incorrect and incomplete, but I've hot a mental wall
+and need more personalized help.*/
+
+
 body {
   background-color: #ffffff;
   font-size: 10px;
 }
 
-span {
-  background-color: #dadada;
-}
 
- /* below is the gray box that the pics and text live in */
 div {
   background-color: #dadada;
-  margin: 50 0 0 0;
+  float: left;
+  margin: 10;
   width: 100%;
-  padding: 6px 0px 0px 0px;
-  font-size: 100%;
-  text-align: left;
+  padding: 10 0 0 0;
 }
 
-.container {
-  margin: 10px auto;
-  width: 30%;
-  background-size: 30%;
-  float: center;
+/* code added to create two-column design on tablet devices*/
+@media screen and (min-width: 575px) {
+  div {
+    font-size: 50%;
+    margin: 1%
+    width: 48%;
+  }
+}
+
+/* code added to create four-column design on laptop and larger devices*/
+@media screen and (min-width: 991px){
+   div {
+    font-size: 1%;
+    width: 23%;
+  }
 }
 
 .emphasis {
-  float: left;
+  background-color: #dadada;
   width: 100%;
   padding: 10%;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-size: 60%;
   text-align: center;
   text-transform: uppercase; /* All characters will be uppercase */
-}
+  }
 
-h1 {
-  border-top: 25px;
-  font-size: 2.5em;
-}
+  /* code added to create two-column design on tablet devices*/
+  @media screen and (min-width: 575px) {
+    .emphasis {
+      font-size: 50%;
+      margin: 1%;
+      width: 48%;
+    }
+  }
 
-h3 {
-  font-size: 1.8em;
-  font-weight: 300;
-}
+  /* code added to create four-column design on laptop and larger devices*/
+  @media screen and (min-width: 991px){
+     .emphasis {
+      font-size: 25%;
+      margin: 1%;
+      width: 23%;
+    }
+  }
 
 img {
   margin-top: 0px;
   width: 100%;
+  position: relative;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
 }
