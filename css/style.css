@@ -36,25 +36,25 @@ body {
 }
 
 .baku {
-  background-image: url(images/baku.jpg);
+  background-image: url(../images/baku.jpg);
   background-size: cover;
   background-position: left;
 }
 
 .london {
-  background: url(images/london.png);
+  background: url(../images/london.png);
   background-size: cover;
   background-position: right;
 }
 
 .madrid {
-  background: url(images/madrid.jpg);
+  background: url(../images/madrid.jpg);
   background-size: cover;
   background-position: left;
 }
 
 .rome {
-  background: url(images/rome.jpg);
+  background: url(../images/rome.jpg);
   background-size: cover;
   background-position: left;
 }
